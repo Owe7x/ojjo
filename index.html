@@ -46,7 +46,7 @@
     </symbol>
 
 </svg>
-<header class="header">
+<header class="header" id="app">
     <div class="container">
         <div class="header__inner">
             <nav class="nav" id="nav">
@@ -58,17 +58,59 @@
                 <img src="img/logo.svg" alt="">
             </div>
             <nav class="nav__2" id="nav">
-                <img class="nav-2__icon" src="/img/icon/search.svg" alt="" >
+                <img class="nav-2__icon" src="img/icon/search.svg" alt="" >
                 <a class="nav__link" href="#" >Поиск</a>
                 <a class="nav__link" href="#" >Вход/Регистрация</a>
                 <div class="header__icon">
-                    <img class="nav-2__icon" src="/img/icon/user.svg" alt="">
-                    <img  src="/img/icon/save.svg" alt="">
+                    <img class="nav-2__icon" src="img/icon/user.svg" alt="">
+                    <img  src="img/icon/save.svg" alt="">
                 </div>
             </nav>
-            <button class="burger" type="button">
+            <button class="burger" type="button" v-on:click="showBurger = !showBurger">
                 <span class="burger__item">Menu</span>
             </button>
+        </div>
+    </div>
+    <div class="burger-menu" v-show="showBurger">
+        <div class="burger__inner">
+            <div class="burger__logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="burger__exit" v-on:click="showBurger = !showBurger">
+                x
+            </div>
+        </div>
+        <nav class="burger__nav">
+            <a class="burger__link" href="#" >Контрагентам</a>
+            <a class="burger__link" href="#" >Дизайнерам</a>
+            <a class="burger__link" href="#" >Вакансии</a>
+            <a class="burger__link" href="#" >Вход/Регистрация</a>
+        </nav>
+        <div class="burger__icon">
+            <img  src="img/icon/user.svg" alt="">
+            <img  src="img/icon/save.svg" alt="">
+        </div>
+        <div class="burger__social">
+            <a class="burger-social__item" href="#" target="_blank">
+                <svg class="burger-social__icon">
+                    <use xlink:href="#youtube"></use>
+                </svg>
+            </a>
+            <a class="burger-social__item" href="#" target="_blank">
+                <svg class="burger-social__icon">
+                    <use xlink:href="#vk"></use>
+                </svg>
+            </a>
+            <a class="burger-social__item" href="#" target="_blank">
+                <svg class="burger-social__icon">
+                    <use xlink:href="#facebook"></use>
+                </svg>
+            </a>
+            <a class="burger-social__item" href="#" target="_blank">
+                <svg class="burger-social__icon">
+                    <use xlink:href="#telegram"></use>
+                </svg>
+            </a>
         </div>
     </div>
     <div class="intro">
@@ -85,12 +127,12 @@
     </div>
     <div class="brands">
         <div class="container">
-            <img class="brands__img" src="/img/brands/brands.svg" alt="">
-            <img class="brands__img" src="/img/brands/brands.svg" alt="">
-            <img class="brands__img" src="/img/brands/brands.svg" alt="">
-            <img class="brands__img" src="/img/brands/brands.svg" alt="">
-            <img class="brands__img" src="/img/brands/brands.svg" alt="">
-            <img class="brands__img" src="/img/brands/brands.svg" alt="">
+            <img class="brands__img" src="img/brands/brands.svg" alt="">
+            <img class="brands__img" src="img/brands/brands.svg" alt="">
+            <img class="brands__img" src="img/brands/brands.svg" alt="">
+            <img class="brands__img" src="img/brands/brands.svg" alt="">
+            <img class="brands__img" src="img/brands/brands.svg" alt="">
+            <img class="brands__img" src="img/brands/brands.svg" alt="">
         </div>
     </div>
 </header>
@@ -149,7 +191,7 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="events-card">
-                    <img src="/img/events/events-1.svg" class="events-card-img" alt="...">
+                    <img src="img/events/events-1.svg" class="events-card-img" alt="...">
                     <div class="events-card-overlay">
                         <h5 class="events__title">Кольца</h5>
                     </div>
@@ -157,7 +199,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="events-card">
-                    <img src="/img/events/events-2.svg" class="events-card-img" alt="...">
+                    <img src="img/events/events-2.svg" class="events-card-img" alt="...">
                     <div class="events-card-overlay">
                         <h5 class="events__title">Серьги</h5>
                     </div>
@@ -165,7 +207,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="events-card">
-                    <img src="/img/events/events-3.svg" class="events-card-img" alt="...">
+                    <img src="img/events/events-3.svg" class="events-card-img" alt="...">
                     <div class="events-card-overlay">
                         <h5 class="events__title">Подвески</h5>
                     </div>
@@ -173,7 +215,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="events-card">
-                    <img src="/img/events/events-4.svg" class="events-card-img" alt="...">
+                    <img src="img/events/events-4.svg" class="events-card-img" alt="...">
                     <div class="events-card-overlay">
                         <h5 class="events__title">Запонки</h5>
                     </div>
@@ -181,7 +223,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="events-card">
-                    <img src="/img/events/events-5.svg" class="events-card-img" alt="...">
+                    <img src="img/events/events-5.svg" class="events-card-img" alt="...">
                     <div class="events-card-overlay">
                         <h5 class="events__title">Браслеты</h5>
                     </div>
@@ -189,7 +231,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="events-card">
-                    <img src="/img/events/events-6.svg" class="events-card-img" alt="...">
+                    <img src="img/events/events-6.svg" class="events-card-img" alt="...">
                     <div class="events-card-overlay">
                         <h5 class="events__title">Часы</h5>
                     </div>
@@ -221,7 +263,7 @@
         <div class="news__inner">
             <div class="col-12 col-md-12 col-lg-4">
                 <div class="events-card">
-                    <img src="/img/news/news-1.svg" class="events-card-img" alt="...">
+                    <img src="img/news/news-1.svg" class="events-card-img" alt="...">
                     <div class="events-card-overlay">
                         <h5 class="news__title">Как выбрать
                         часы для своей
@@ -231,7 +273,7 @@
             </div>
             <div class="col-12 col-md-12 col-lg-4">
                 <div class="events-card">
-                    <img src="/img/news/news-2.svg" class="events-card-img" alt="...">
+                    <img src="img/news/news-2.svg" class="events-card-img" alt="...">
                     <div class="events-card-overlay">
                         <h5 class="news__title">Запонки для мужа:
                         7 ключевых правил
@@ -241,7 +283,7 @@
             </div>
             <div class="col-12 col-md-12 col-lg-4">
                 <div class="events-card">
-                    <img src="/img/news/news-3.svg" class="events-card-img" alt="...">
+                    <img src="img/news/news-3.svg" class="events-card-img" alt="...">
                     <div class="events-card-overlay">
                         <h5 class="news__title">Как выбрать
                         обручальные кольца
@@ -269,16 +311,16 @@
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/L6HIhNivFJw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="col-6 col-md-3 col-lg-3">
-                    <img src="/img/socail/social-1.svg" alt="">
+                    <img src="img/socail/social-1.svg" alt="">
                 </div>
                 <div class="col-6 col-md-3 col-lg-3">
-                    <img src="/img/socail/social-2.svg" alt="">
+                    <img src="img/socail/social-2.svg" alt="">
                 </div>
                 <div class="col-6 col-md-3 col-lg-3">
-                    <img src="/img/socail/social-3.svg" alt="">
+                    <img src="img/socail/social-3.svg" alt="">
                 </div>
                 <div class="col-6 col-md-3 col-lg-3">
-                    <img src="/img/socail/social-4.svg" alt="">
+                    <img src="img/socail/social-4.svg" alt="">
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/L6HIhNivFJw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -336,8 +378,8 @@
                     <div class="footer__text">
                         <p class="footer__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</p>
                         <div class="footer-item__img">
-                            <img src="/img/icon/visa.svg" alt="">
-                            <img src="/img/icon/mastercard.svg" alt="">
+                            <img src="img/icon/visa.svg" alt="">
+                            <img src="img/icon/mastercard.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -347,9 +389,9 @@
                     <div class="footer__title">контакты</div>
                     <div class="footer__text">
                         <nav class="footer__ul">
-                            <li> <img src="/img/icon/phone.svg" alt=""> 8 (812) 234-56-55</li>
-                            <li> <img src="/img/icon/phone.svg" alt="">8 (812) 234-56-55</li>
-                            <li> <img src="/img/icon/mail.svg" alt="">ojjo@ojjo.ru</li>
+                            <li> <img src="img/icon/phone.svg" alt=""> 8 (812) 234-56-55</li>
+                            <li> <img src="img/icon/phone.svg" alt="">8 (812) 234-56-55</li>
+                            <li> <img src="img/icon/mail.svg" alt="">ojjo@ojjo.ru</li>
                         </nav>
                     </div>
                 </div>
@@ -411,5 +453,16 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    const app = new Vue({
+    el: '#app',
+    data: {
+        showBurger: false,
+        message: 'Hello, Vue!',
+        now: new Date()
+        
+    }})
+</script>
 </body>
 </html>
