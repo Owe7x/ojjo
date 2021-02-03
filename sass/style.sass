@@ -123,7 +123,6 @@ body
 .btn--events
     width: 165px
     height: 55px
-    
     padding: 0
     background: #F9F9F9
     border: 1px solid #D6D6D6
@@ -159,10 +158,10 @@ body
         height: 61px
         background: #333333
         color: #ffffff
-    &
 
 /* Brands */
 .brands
+    display: block
     margin-top: 80px
     padding-top: 30px
     border-top: 1px solid #FFFFFF
@@ -207,12 +206,19 @@ body
     display: flex
     justify-content: space-between
     margin-bottom: 55px
+.events__item
+    display: flex
+    justify-content: center
+    margin-bottom: 15px
 .events-card
     position: relative
     margin-bottom: 30px
     cursor: pointer
     &:hover .events__title
-        color: rgba(255,255,255,0.8 )       
+        color: rgba(255,255,255,0.8 )
+    img
+        max-width: 100%
+        min-width: 100%
 .events__title
     font-family: 'Gilroy-Medium'
     font-style: normal
@@ -248,6 +254,7 @@ body
     margin-bottom: 120px
 .news__inner
     display: flex
+    flex-wrap: wrap
     padding-top: 60px
 
 .news__title
@@ -270,6 +277,8 @@ body
 .socail__inner
     margin-top: 60px
     display: flex
+    img
+        max-width: 100%
 
 /* Mailing */
 
@@ -431,3 +440,111 @@ form
     fill: #ffffff 
 .social__item:hover .social__icon 
     fill: #000 
+
+/* Burger */
+
+.burger 
+    display: none
+    padding: 9px 2px
+
+    background: none
+    border: 0
+    cursor: pointer
+
+.burger__item 
+    display: block
+    width: 28px
+    height: 3px
+
+    background-color: #fff
+
+    font-size: 0
+    color: transparent
+
+    position: relative
+
+
+.burger__item:before,
+.burger__item:after 
+    content: ""
+    height: 100%
+
+    background-color: #fff
+
+    position: absolute
+    right: 0
+    z-index: 1
+
+
+.burger__item:before 
+    width: 30px
+    top: -8px
+
+
+.burger__item:after 
+    width: 26px
+    bottom: -8px
+
+@media  (max-width: 1200px)
+    /* Brands */
+    .brands
+        display: none
+
+    /* Events */
+    .events__buttons
+        display: flex
+        justify-content: center
+
+    /* BTN */
+    .btn--events
+        width: 130px
+        &:hover
+            width: 130px
+        &:active
+            width: 130px
+
+@media  (max-width: 992px)
+    /* Header */
+    .nav
+        display: none
+    .nav__2
+        display: none
+
+    .burger
+        display: block
+
+    /* Common*/
+    .common__p
+        margin: 45px 130px 60px
+
+    /* Mailing */
+    .form
+        width: 100%
+    form
+        padding: 11px 10px
+
+@media  (max-width: 768px)
+    /* Common*/
+    .common__p
+        margin: 45px 0px 60px
+
+    /* Mailinig */
+    .mailing__ul
+        display: flex
+        padding-left: 0px
+
+@media  (max-width: 576px)
+    /* Common Text*/
+    .common__title
+        font-size: 15px
+        line-height: 100%
+
+    .common__subtitle
+        font-size: 24px
+        line-height: 41px
+
+    .common__p
+        font-size: 12px
+        margin: 25px 0px 60px
+    .mailing__ul
+        font-size: 11px

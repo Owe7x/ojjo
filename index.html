@@ -50,9 +50,9 @@
     <div class="container">
         <div class="header__inner">
             <nav class="nav" id="nav">
-                <a class="nav__link" href="#" data-scroll="#counterparties">Контрагентам</a>
-                <a class="nav__link" href="#" data-scroll="#designers">Дизайнерам</a>
-                <a class="nav__link" href="#" data-scroll="#job">Вакансии</a>
+                <a class="nav__link" href="#" >Контрагентам</a>
+                <a class="nav__link" href="#" >Дизайнерам</a>
+                <a class="nav__link" href="#" >Вакансии</a>
             </nav>
             <div class="header__logo">
                 <img src="img/logo.svg" alt="">
@@ -66,6 +66,9 @@
                     <img  src="/img/icon/save.svg" alt="">
                 </div>
             </nav>
+            <button class="burger" type="button">
+                <span class="burger__item">Menu</span>
+            </button>
         </div>
     </div>
     <div class="intro">
@@ -98,24 +101,50 @@
             <div class="common__subtitle">Настоящая красота здесь!</div>
         </div>
         <div class="events__buttons">
-            <button class="btn--events">
-                Свадьба
-            </button>
-            <button class="btn--events">
-                Мужу
-            </button>
-            <button class="btn--events">
-                Жене
-            </button>
-            <button class="btn--events">
-                Партнеру
-            </button>
-            <button class="btn--events">
-                Коллекции
-            </button>
-            <button class="btn--events">
-                Редкость
-            </button>
+            <div class="row">
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <div class="events__item">
+                        <button class="btn--events">
+                            Свадьба
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <div class="events__item">
+                        <button class="btn--events">
+                            Мужу
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <div class="events__item">
+                        <button class="btn--events">
+                            Жене
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <div class="events__item">
+                        <button class="btn--events">
+                            Партнеру
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <div class="events__item">
+                        <button class="btn--events">
+                            Коллекции
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <div class="events__item">
+                        <button class="btn--events">
+                            Редкость
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4">
@@ -190,7 +219,7 @@
             <div class="common__subtitle ">Лучшие советы по подбору дорогих подарков</div>
         </div>
         <div class="news__inner">
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-12 col-lg-4">
                 <div class="events-card">
                     <img src="/img/news/news-1.svg" class="events-card-img" alt="...">
                     <div class="events-card-overlay">
@@ -200,7 +229,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-12 col-lg-4">
                 <div class="events-card">
                     <img src="/img/news/news-2.svg" class="events-card-img" alt="...">
                     <div class="events-card-overlay">
@@ -210,7 +239,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-12 col-lg-4">
                 <div class="events-card">
                     <img src="/img/news/news-3.svg" class="events-card-img" alt="...">
                     <div class="events-card-overlay">
@@ -288,7 +317,7 @@
 <div class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="footer-item">
                     <div class="footer__title">Полезные ссылки</div>
                     <div class="footer__text">
@@ -301,7 +330,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="footer-item">
                     <div class="footer__title">оплата</div>
                     <div class="footer__text">
@@ -313,7 +342,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="footer-item">
                     <div class="footer__title">контакты</div>
                     <div class="footer__text">
@@ -325,7 +354,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="footer-item">
                     <div class="footer__title">социальные сети</div>
                     <div class="footer__text">
@@ -358,22 +387,22 @@
         </div>
         <div class="copyright">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="copyright__title">
                         <a href="">(c) 2020 OJJO jewelry</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="copyright__title">
                         <a href="">Договор публичной офферты</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="copyright__title">
                         <a href="">Контрагентам</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="copyright__title">
                         <a href=""><span>Сделано Figma.info/ Рахманов.Т</span></a>
                     </div>
